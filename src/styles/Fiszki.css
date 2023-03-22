@@ -1,0 +1,93 @@
+#render-container {
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#render-container #title-container {
+  margin-top: 5vh;
+  display: flex;
+  flex-basis: 100%;
+  text-align: end;
+  justify-content: center;
+  color: #202b53;
+  height: 10vh;
+}
+#render-container #title-container h1 {
+  font-size: 3vw;
+}
+#render-container #fiszka-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  flex-basis: 50vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: white;
+  align-items: center;
+}
+#render-container #fiszka-container #slowko {
+  color: #202b53;
+  font-weight: 800;
+}
+#render-container #fiszka-container #btn-container {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+  align-items: end;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#render-container #fiszka-container #btn-container button {
+  height: 5vh;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #ABABFC;
+  transition: 0.3s;
+  border-radius: 10px;
+  width: 20vw;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  color: #202b53;
+  box-shadow: none;
+}
+#render-container #fiszka-container #btn-container button:hover {
+  background-color: #ABABFC;
+  z-index: 2;
+}
+#render-container #fiszka-container #change {
+  border-radius: 10px;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: end;
+  font-size: 1.5vw;
+  cursor: pointer;
+  height: 60%;
+  align-items: center;
+}
+#render-container #fiszka-container #counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  color: rgb(91, 90, 102);
+}
+
+@keyframes flip {
+  99% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+.flip {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  animation: flip 0.4s ease-in-out;
+}/*# sourceMappingURL=Fiszki.css.map */

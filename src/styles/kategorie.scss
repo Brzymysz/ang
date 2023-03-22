@@ -1,0 +1,39 @@
+$white: rgb(255, 255, 255);
+$primary:#202b53;
+$secondary:#ABABFC;
+.kategoria{
+    display: flex;
+    flex-basis: 33%;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    transition: 0.5s;
+    color: black;
+    justify-content: center;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    text-align: center;
+    align-items: center;
+
+}
+#main{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.kategoria a{
+    font-size: 1vw;
+    color: $primary;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px $secondary solid;
+    border-radius: 10px;
+    width: 80%;
+    padding: 1vw;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 800;
+}
+.kategoria a:hover{
+    transform: scale(110%);
+}

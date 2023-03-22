@@ -1,0 +1,12 @@
+#game {
+  display: flex;
+  margin-top: 20vh;
+  justify-content: center;
+}
+#game button {
+  width: 20vw;
+  height: 10vh;
+}
+#game #dop {
+  margin-bottom: 100px;
+}/*# sourceMappingURL=Zadania.css.map */

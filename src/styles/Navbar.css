@@ -1,0 +1,56 @@
+nav {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  height: 8vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+nav li {
+  display: inline;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  color: #202b53;
+  font-weight: 600;
+  height: 4vh;
+  margin-right: 10vh;
+  width: 10vw;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #ABABFC;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+nav li:hover {
+  border-color: #202b53;
+}
+nav ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-basis: 100%;
+}
+nav a {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #202b53;
+  height: 100%;
+  width: 100%;
+  font-weight: 800;
+}
+nav #bomba {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 3vw;
+  width: 3vw;
+}
+nav #bomba img {
+  border-radius: 10px;
+}/*# sourceMappingURL=Navbar.css.map */

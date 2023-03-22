@@ -1,0 +1,103 @@
+$white: rgb(255, 255, 255);
+$primary:#202b53;
+$secondary:#ABABFC;
+#render-container{
+margin-top: 10vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+height: 100%;
+#title-container{
+    margin-top: 5vh;
+    display: flex;
+    flex-basis: 100%;
+    text-align: end;
+    justify-content: center;
+    color: $primary;
+    height: 10vh;
+    h1{
+        font-size: 3vw;
+    }
+    
+}
+#fiszka-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    flex-basis: 50vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: white;
+    align-items: center;
+
+    #slowko{
+        color: $primary;
+        font-weight: 800;
+    }
+
+    #btn-container{
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-around;
+        align-items:end;
+        height:fit-content;
+        button{
+            height: 5vh;
+            background-color: $white;
+            border: 2px solid $secondary;
+            transition: 0.3s;
+            border-radius: 10px;
+            width: 20vw;
+            cursor: pointer;
+            font-family: 'Nunito' , sans-serif;
+            font-size: 1vw;
+            font-weight: 600;
+            color: $primary;
+            box-shadow: none;
+        }
+        button:hover{
+            background-color: $secondary;
+            z-index: 2;
+        }
+    }
+
+    #change{
+        border-radius: 10px;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: end;
+        font-size: 1.5vw;
+        cursor: pointer;
+        height:60%;
+        align-items: center;
+    }
+    #counter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vh;
+        color: rgb(91, 90, 102);
+    }
+}
+
+}
+@keyframes flip {
+    0% {
+
+    }
+
+    
+    99%{
+        transform: rotateX(270deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+  }
+  .flip{
+    backface-visibility: hidden;
+    animation: flip 0.4s ease-in-out;
+  }
