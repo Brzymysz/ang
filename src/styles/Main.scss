@@ -92,6 +92,8 @@ html{
     border-radius: 20px;
     margin-top: 20vh;
     margin-bottom: 20vw;
+    min-width: 360px;
+    min-height: 200px;
     .panel{
         position: relative;
         overflow: hidden;
@@ -153,5 +155,68 @@ html{
             }
         }
     }
+}
+@media screen  and (max-width:500px) {
+    .main-container{
+        max-width: 100%;
+        height: min-content;
+        .present{
+            margin-top: 10vh;
+            height: fit-content;
+            margin-bottom: 0;
+            .text{
+                align-items: end;
+                padding:0 10px 0 10px;
+                h1{
+                    font-size: 25px;
+                }
+                h2{
+                    margin-top: 0;
+                    font-size: 15px;
+                }
+                button{
+                    margin: 0;
+                    height: 10vh;
+                }
+            }
+        }
+        .panel-container{
+            margin-top: 10vh;
+            height: 30vh;
+            max-width: 90vw;
+            .panel{
+                align-items: center;
+                .logo{
+                    width: 90%;
+                    height: 90%;
+                    margin: 0;
+                    align-items: center;
+                    img{
+                        width: auto;
+                        height: auto;
+                        border-radius: 30px;
+                        padding: 10px;
+                        min-width: 150px;
+                        min-height: 150px;
+                    }
+                }
+                div{
+                    margin: 0;
+                    button{
+                        width: 100%;
+                        margin-right: 10px;
+                        a{
+                            font-size: 4vw;
+                        }
+                    }
+                    p{
+                        font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
 

@@ -25,6 +25,7 @@ nav{
         transition: 0.3s;
         background-color: $secondary;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        min-width: 120px;
      }
     li:hover{
         border-color: $primary;
@@ -53,9 +54,23 @@ nav{
         left: 7px;
         height: 3vw;
         width: 3vw;
-
+        min-height: 40px;
+        min-width: 40px;
         img{
             border-radius: 10px;
         }
     }
+}
+@media only screen and (max-width:500px){
+    nav{
+        ul{
+            justify-content: space-evenly;
+            margin: 0;
+            margin-left: 50px;
+            li{
+                margin-right: 10px;
+            }
+        }
+    }
+
 }
