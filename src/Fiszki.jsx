@@ -14,7 +14,7 @@ function Fiszki(){
             .then(data =>setWords(Object.values(data)))
         
         }
-        fetchAPISlowa("http://localhost:5173/api/words/" + location.state)
+        fetchAPISlowa("https://fastapi-rgau-production.up.railway.app/words" + location.state)
       }, []);
       useEffect(()=>{
         

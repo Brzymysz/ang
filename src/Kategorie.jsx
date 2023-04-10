@@ -6,7 +6,7 @@ function Kategorie(){
     const [categories,setCategories]=useState([])
     const [kongo,setKongo]=useState()
     
-    const cat = "http://localhost:5173/api/categories"
+    const cat = "https://fastapi-rgau-production.up.railway.app/categories"
     function fetchAPI(apiLink)
     {
         fetch(apiLink)
