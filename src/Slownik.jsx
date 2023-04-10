@@ -16,7 +16,7 @@ function Slownik(){
     }
     
     useEffect(() => {
-        fetchAPISlowa("https://fastapi-rgau-production.up.railway.app/words" + location.state)
+        fetchAPISlowa("https://fastapi-rgau-production.up.railway.app/words/" + location.state)
       }, []);
     
     return(
